@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion buildConfig.compileSdk
+
+    defaultConfig {
+        applicationId "com.tomwo.app.baking"
+        minSdkVersion buildConfig.minSdk
+        targetSdkVersion buildConfig.targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.getCompileConfiguration().resolutionStrategy {
+            force 'com.google.code.findbugs:jsr305:1.3.9'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+
+
+dependencies {
+
+    implementation project(':lib')
+    implementation project(':roboto')
+
+    implementation "android.arch.lifecycle:extensions:$archLifecycleVersion"
+    kapt 'android.arch.lifecycle:compiler:' + rootProject.archLifecycleVersion
+
+    // kotlin
+    implementation deps.kotlin.stdlib.jdk
+    implementation deps.kotlin.anko.common
+    implementation deps.kotlin.anko.sqlite
+
+    // Android KTX for framework API
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    implementation deps.android.support.appCompat
+    implementation deps.android.support.recyclerView
+    implementation deps.android.support.cardView
+    implementation deps.android.support.design
+    implementation deps.android.support.constraintLayout
+
+    implementation deps.android.x.coreKtx
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.1'
+
+    // Testing-only dependencies!
+    // testImplementation 'junit:junit:4.12'  // test
+    androidTestImplementation "com.android.support:support-annotations:$support_library"
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+}

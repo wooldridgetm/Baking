@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#fafafa</color>
+
+    <color name="colorPrimary">#3949AB</color>
+    <color name="colorPrimaryDark">#1a237e</color>
+    <color name="colorAccent">#ffee58</color>
+    <color name="colorAccentAlt">#EE4744</color>
+
+    <color name="navigation_bar">#fff</color>
+    <color name="card">#fff</color>
+
+    <color name="off_white">#e0e0e0</color>
+    <color name="divider">@color/off_white</color>
+    <color name="selected_list_item">@color/off_white</color>
+
+
+    <!-- Text Color -->
+    <color name="links">#4151fd</color>
+    <color name="greyish_brown">#424242</color>
+    <color name="primary_text_dark">@color/greyish_brown</color>
+    <color name="secondary_text_dark">#616161</color>
+    <color name="widget_header_text">#4a5cfe</color>
+
+</resources>

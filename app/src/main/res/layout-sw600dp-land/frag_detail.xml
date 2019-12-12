@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/offline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/white"
+        android:drawablePadding="@dimen/spacing_normal_minus_8dp"
+        android:drawableStart="@drawable/ic_alert"
+        android:padding="@dimen/spacing_normal"
+        android:text="@string/offline_no_videos"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/offline_text_size"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/divider_height"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offline"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:showIn=".ui.fragments.DetailFrag"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offline"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ScrollView
+                    android:id="@+id/scroller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    >
+
+                    <com.tomwo.app.lib.CollapsibleCard
+                        android:id="@+id/recipeDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:cardCaption="Makes 2 Servings"
+                        tools:cardTitle="Brownies"
+                        android:background="#EEEEEE"
+                        />
+                </ScrollView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/stepsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="0dp"
+                    android:scrollbars="none"
+                    />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:minHeight="300dp"
+                android:layout_margin="0dp"
+                android:adjustViewBounds="true"
+                app:resize_mode="fill"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                app:layout_constraintVertical_weight="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/desc"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/desc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/playerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_weight="1"
+                android:background="@color/selected_list_item"
+                android:gravity="center"
+                android:padding="@dimen/spacing_normal"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/direction_detail_text_size"
+                tools:text="Dump half of flour mixture into chocolate mixture and carefully fold in, just until no streaks remain. Repeat with the rest of the flour mixture. Fold in the chocolate chips."
+                />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

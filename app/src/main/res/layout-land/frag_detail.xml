@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/spacing_normal_minus_8dp"
+        android:drawableStart="@drawable/ic_alert"
+        android:padding="@dimen/spacing_normal"
+        android:text="@string/offline_no_videos"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/offline_text_size"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        tools:showIn=".ui.fragments.DetailFrag"
+        tools:theme="@style/AppTheme.NoActionBar"
+        >
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            app:resize_mode="fill"
+            android:adjustViewBounds="true"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            style="@style/ProductSans.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:text="Nutella Pie"
+            tools:textColor="@android:color/black"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/desc"
+            style="@style/hiddenViews"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            style="@style/hiddenViews"
+            />
+
+        <ScrollView
+            android:id="@+id/scroller"
+            style="@style/hiddenViews"
+            />
+
+        <com.tomwo.app.lib.CollapsibleCard
+            android:id="@+id/recipeDetails"
+            style="@style/hiddenViews"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/servings"
+            style="@style/hiddenViews"
+            />
+
+        <ImageView
+            android:id="@+id/detailsIcon"
+            style="@style/hiddenViews"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stepsList"
+            style="@style/hiddenViews"
+            />
+
+
+
+    </FrameLayout>
+</LinearLayout>

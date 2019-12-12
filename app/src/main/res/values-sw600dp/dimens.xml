@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing_micro">8dp</dimen>
+    <dimen name="spacing_normal">24dp</dimen>
+    <dimen name="spacing_normal_minus_8dp">16dp</dimen>
+
+    <dimen name="recipe_title_text_size">24sp</dimen>
+    <dimen name="recipe_accessory_text_size">20sp</dimen>
+    <dimen name="recipe_detail_text_size">14sp</dimen>
+
+    <dimen name="direction_title_text_size">20sp</dimen>
+    <dimen name="direction_detail_text_size">26sp</dimen>
+
+    <dimen name="video_icon_size">32dp</dimen>
+    <dimen name="offline_text_size">16sp</dimen>
+</resources>

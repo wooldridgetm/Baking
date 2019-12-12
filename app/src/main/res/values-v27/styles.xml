@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- NoActionBar -->
+    <style name="Base.V27.Theme.NoActionBar" parent="Base.V26.Theme.NoActionBar">
+        <item name="android:windowLightNavigationBar">@bool/light_navigation</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Base.V27.Theme.NoActionBar">
+    </style>
+    <!-- DarkActionBar -->
+    <style name="Base.V27.Theme" parent="Base.V26.Theme">
+        <item name="android:windowLightNavigationBar">@bool/light_navigation</item>
+    </style>
+    <style name="AppTheme" parent="Base.V27.Theme">
+    </style>
+
+
+</resources>

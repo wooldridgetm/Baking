@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:showIn=".ui.fragments.DetailFrag"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/spacing_normal_minus_8dp"
+        android:drawableStart="@drawable/ic_alert"
+        android:padding="@dimen/spacing_normal"
+        android:text="@string/offline_no_videos"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/offline_text_size"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="0dp"
+        app:resize_mode="fill"
+        android:adjustViewBounds="true"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/desc"
+        style="@style/hiddenViews"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ScrollView
+                android:id="@+id/scroller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+
+                <com.tomwo.app.lib.CollapsibleCard
+                    android:id="@+id/recipeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:cardCaption="Makes 2 Servings"
+                    tools:cardTitle="Brownies"
+                    />
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@android:color/black"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/stepsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="0dp"
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</LinearLayout>

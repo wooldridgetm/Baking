@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "30695756192",
+    "firebase_url": "https://baking-abc41.firebaseio.com",
+    "project_id": "baking-abc41",
+    "storage_bucket": "baking-abc41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30695756192:android:92d035881f8c831c",
+        "android_client_info": {
+          "package_name": "com.tomwo.app.baking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30695756192-jn9n6k40apbkggi2hvo8us1rudkst1pj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomwo.app.baking",
+            "certificate_hash": "8aa62005901dd5058a7b3c868158d85b9258503e"
+          }
+        },
+        {
+          "client_id": "30695756192-06kbkqnik291fh6t4oidnjbcj4na644f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyW-jsno2bheUayFWYXrRoDyP-n5cSGrQ"
+        },
+        {
+          "current_key": "AIzaSyBtqOD_yGzyMlZIsFzMSVUisZ0Jy8LyiCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30695756192-06kbkqnik291fh6t4oidnjbcj4na644f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30695756192:android:fcaaca0eca7b2163",
+        "android_client_info": {
+          "package_name": "com.tomwo.app.baking.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30695756192-8ro9g0i87rtb9peov587hh4v7d80b5ha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomwo.app.baking.debug",
+            "certificate_hash": "8aa62005901dd5058a7b3c868158d85b9258503e"
+          }
+        },
+        {
+          "client_id": "30695756192-06kbkqnik291fh6t4oidnjbcj4na644f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyW-jsno2bheUayFWYXrRoDyP-n5cSGrQ"
+        },
+        {
+          "current_key": "AIzaSyBtqOD_yGzyMlZIsFzMSVUisZ0Jy8LyiCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30695756192-06kbkqnik291fh6t4oidnjbcj4na644f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

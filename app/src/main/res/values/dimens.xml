@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- standard metrics -->
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_normal_minus_8dp">8dp</dimen>
+    <dimen name="divider_spacing">4dp</dimen>
+    <dimen name="divider_spacing_minus_2dp">2dp</dimen>
+
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="stream_card_corner_radius">0dp</dimen>
+
+    <dimen name="offline_text_size">14sp</dimen>
+    <dimen name="recipe_title_text_size">24sp</dimen>
+    <dimen name="recipe_accessory_text_size">22sp</dimen>
+    <dimen name="recipe_detail_text_size">14sp</dimen>
+
+    <dimen name="direction_title_text_size">18sp</dimen>
+    <dimen name="direction_detail_text_size">22sp</dimen>
+
+    <dimen name="video_icon_size">24dp</dimen>
+
+
+    <!-- WIDGET -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="appwidget_text_size_small">12sp</dimen>
+    <dimen name="appwidget_text_size_medium">14sp</dimen>
+    <dimen name="appwidget_text_size_large">18sp</dimen>
+    <dimen name="widget_header_height">40dp</dimen>
+
+    <!-- per https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#MATCH_PARENT -->
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+
+    <!--
+    Refer to App Widget Documentation for margin information
+    http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+
+</resources>

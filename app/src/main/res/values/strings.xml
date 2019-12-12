@@ -1,0 +1,55 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Baking</string>
+
+    <!-- Navigation bar text for viewing the user's My I/O -->
+    <string name="title_my_io">My I/O</string>
+
+
+    <!-- ExoPlayer Sample - list_divider.xml, player_activity.xml, and track_selection_dialog.xml  && EventLogger, PlayerActivity, TrackSelectionHelper -->
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="text">Text</string>
+    <string name="retry">Retry</string>
+    <string name="selection_disabled">Disabled</string>
+    <string name="selection_default">Default</string>
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="enable_random_adaptation">Enable random adaptation</string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <string name="servingsLbl">Servings:</string>
+    <string name="ingredients">Ingredients</string>
+
+   <!-- %1$s is a string and %2$d is a decimal number-->
+    <string name="ordering">%1$d.</string>
+
+    <plurals name="numberOfServings">
+        <item quantity="one">Makes %d Serving.</item>
+        <item quantity="other">Makes %d Servings.</item>
+    </plurals>
+
+    <string name="ingredients_title">Ingredients</string>
+    <string name="directions">DIRECTIONS</string>
+    <string name="empty_widget_text">No ingredients found</string>
+    <string name="groupPlayPause">groupPlayPause</string>
+    <string name="path_play">M18,12 L6,12  L6,19   L18,12 M18,12 L6,5  L6,12  L18,12</string>
+    <string name="path_pause">M14,5 L14,19 L18,19  L18,5  M6,5   L6,19  L10,19 L10,5</string>
+    <string name="icon_path">iconPath</string>
+
+
+    <string name="offline_msg_list">Device is Offline. Connect to the Internet to load data</string>
+    <string name="offline_no_videos">No Network Connection. Some functionality may not work.</string>
+</resources>

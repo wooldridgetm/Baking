@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="@dimen/divider_spacing_minus_2dp"
+    android:layout_marginBottom="@dimen/divider_spacing_minus_2dp"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/orderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/direction_title_text_size"
+            tools:text="11."
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="@dimen/spacing_normal_minus_8dp"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:maxLines="2"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/direction_title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/orderTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Melt butter and Bitter Sweet Chocolate"
+            />
+
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_normal_minus_8dp"
+            android:textColor="@color/secondary_text_dark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/titleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            app:layout_constraintVertical_bias="0"
+            tools:text="Dump half of flour mixture into chocolate mixture and carefully fold in, just until no streaks remain. Repeat with the rest of the flour mixture. Fold in the chocolate chips."
+            />
+
+        <ImageView
+            android:id="@+id/videoIcon"
+            android:layout_width="@dimen/video_icon_size"
+            android:layout_height="@dimen/video_icon_size"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/detailTextView"
+            app:layout_constraintTop_toBottomOf="@+id/detailTextView"
+            app:srcCompat="@drawable/ic_videocam_24dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/videoIcon"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

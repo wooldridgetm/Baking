@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion buildConfig.compileSdk
+    defaultConfig {
+        minSdkVersion buildConfig.minSdk
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-compat:27.1.1'
+
+}

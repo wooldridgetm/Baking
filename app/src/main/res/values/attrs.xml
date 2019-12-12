@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiSwipeRefreshLayout">
+        <attr name="foreground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MessageCard">
+        <attr name="messageTitle" format="string" />
+        <attr name="messageText" format="string" />
+        <attr name="button1text" format="string" />
+        <attr name="button1tag" format="string" />
+        <attr name="button1emphasis" format="boolean" />
+        <attr name="button2text" format="string" />
+        <attr name="button2tag" format="string" />
+        <attr name="button2emphasis" format="boolean" />
+        <attr name="emphasisColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsibleCard">
+        <attr name="cardTitle" format="string"/>
+        <attr name="cardDescription" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioView">
+        <attr name="aspectRatio" format="float" />
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

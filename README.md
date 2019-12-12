@@ -1,4 +1,4 @@
 # Baking
-Sample App demonstrating fetching data from the internet, storing that data in a local db, playing videos, and more.
+Sample App demonstrating fetching data from the internet, storing that data in a local db, playing videos, custom views and more.
 
 Written entirely in Kotlin.
